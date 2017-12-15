@@ -1,1 +1,0 @@
-fetch("https://api.coindesk.com/v1/bpi/currentprice.json").then(function(r) {return r.json();}).then(function(d){ document.getElementById("pizzaprice").innerHTML = (2000*d.bpi.USD.rate.replace(/,/g,'')).toLocaleString();});
